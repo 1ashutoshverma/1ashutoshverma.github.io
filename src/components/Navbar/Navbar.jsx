@@ -26,7 +26,7 @@ function Navbar() {
                 <div id="smallScreenNavbar">
                     <div><h2>Portfolio</h2></div>
                     <div onClick={() => { setBurger(!burger) }}>
-                        <img src="./src/assets/navbarImages/burgerMenu.svg" alt="" />
+                        <img src="/Images/burgerMenu.svg" alt="" />
                     </div>
                 </div>
             </div>
