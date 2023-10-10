@@ -11,22 +11,22 @@ function Navbar() {
                 <div id="largeScreenNavbar">
                     <div><h2>Portfolio</h2></div>
                     <div>
-                        <p class="nav-link home">Home</p>
-                        <p class="nav-link about">About</p>
-                        <p class="nav-link skills">Skills</p>
-                        <p class="nav-link projects">Projects</p>
-                        <p class="nav-link contact">Contact</p>
+                        <p className="nav-link home">Home</p>
+                        <p className="nav-link about">About</p>
+                        <p className="nav-link skills">Skills</p>
+                        <p className="nav-link projects">Projects</p>
+                        <p className="nav-link contact">Contact</p>
                     </div>
                     <div>
-                        <button class="nav-link resume">Resume</button>
-                        <button class="nav-link github">GitHub</button>
+                        <button className="nav-link resume">Resume</button>
+                        <button className="nav-link github">GitHub</button>
                     </div>
                 </div>
                 {/* For amall Screens */}
                 <div id="smallScreenNavbar">
                     <div><h2>Portfolio</h2></div>
                     <div onClick={() => { setBurger(!burger) }}>
-                        <img src="/src/assets/navbarImages/burgerMenu.svg" alt="" />
+                        <img src="./src/assets/navbarImages/burgerMenu.svg" alt="" />
                     </div>
                 </div>
             </div>
@@ -34,13 +34,13 @@ function Navbar() {
             {
                 burger ? (<div id='smallScreenDropDown'>
                     <div>
-                        <p class="nav-link home">Home</p>
-                        <p class="nav-link about">About</p>
-                        <p class="nav-link skills">Skills</p>
-                        <p class="nav-link projects">Projects</p>
-                        <p class="nav-link contact">Contact</p>
-                        <button class="nav-link resume">Resume</button>
-                        <button class="nav-link github">GitHub</button>
+                        <p className="nav-link home">Home</p>
+                        <p className="nav-link about">About</p>
+                        <p className="nav-link skills">Skills</p>
+                        <p className="nav-link projects">Projects</p>
+                        <p className="nav-link contact">Contact</p>
+                        <button className="nav-link resume">Resume</button>
+                        <button className="nav-link github">GitHub</button>
                     </div>
 
                 </div>) : <></>
