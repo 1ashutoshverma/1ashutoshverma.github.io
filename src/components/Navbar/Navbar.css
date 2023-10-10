@@ -1,5 +1,4 @@
 #nav-menu {
-  /* border: 1px solid red; */
   position: fixed;
   width: 100%;
   background-color: #191924;
@@ -28,6 +27,11 @@
   width: 45%;
   /* border: 1px solid red; */
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #largeScreenNavbar > div:nth-child(3) {
   display: flex;
   justify-content: space-between;
@@ -70,12 +74,16 @@
 }
 #smallScreenNavbar > div:last-child {
   /* border: 1px solid red; */
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 35px;
+  cursor: pointer;
 }
+
 img {
+  /* border: 1px solid red; */
   width: 100%;
 }
 

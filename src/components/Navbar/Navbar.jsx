@@ -11,11 +11,11 @@ function Navbar() {
                 <div id="largeScreenNavbar">
                     <div><h2>Portfolio</h2></div>
                     <div>
-                        <p className="nav-link home">Home</p>
-                        <p className="nav-link about">About</p>
-                        <p className="nav-link skills">Skills</p>
-                        <p className="nav-link projects">Projects</p>
-                        <p className="nav-link contact">Contact</p>
+                        <a href='#home' className="nav-link home">Home</a>
+                        <a href='#about' className="nav-link about">About</a>
+                        <a href='#skills' className="nav-link skills">Skills</a>
+                        <a href='#projects' className="nav-link projects">Projects</a>
+                        <a href='#contact' className="nav-link contact">Contact</a>
                     </div>
                     <div>
                         <button className="nav-link resume">Resume</button>
@@ -26,23 +26,21 @@ function Navbar() {
                 <div id="smallScreenNavbar">
                     <div><h2>Portfolio</h2></div>
                     <div onClick={() => { setBurger(!burger) }}>
-                        <img src="/Images/burgerMenu.svg" alt="" />
+                        <img src={burger ? "/Images/cross.svg" : "/Images/burgerMenu.svg"} alt="" />
                     </div>
                 </div>
             </div>
-
             {
                 burger ? (<div id='smallScreenDropDown'>
                     <div>
-                        <p className="nav-link home">Home</p>
-                        <p className="nav-link about">About</p>
-                        <p className="nav-link skills">Skills</p>
-                        <p className="nav-link projects">Projects</p>
-                        <p className="nav-link contact">Contact</p>
+                        <a href='#home' className="nav-link home">Home</a>
+                        <a href='#about' className="nav-link about">About</a>
+                        <a href='#skills' className="nav-link skills">Skills</a>
+                        <a href='#projects' className="nav-link projects">Projects</a>
+                        <a href='#contact' className="nav-link contact">Contact</a>
                         <button className="nav-link resume">Resume</button>
                         <button className="nav-link github">GitHub</button>
                     </div>
-
                 </div>) : <></>
             }
 
