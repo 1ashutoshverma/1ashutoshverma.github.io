@@ -19,14 +19,13 @@ function AboutSection() {
             </p>
             <div className='education_card'>
 
-                <h2>Eduction</h2>
-
+                <h2>Education</h2>
                 <div>
                     {/* timeline starts here */}
                     <Timeline
                         sx={{
                             [`& .${timelineOppositeContentClasses.root}`]: {
-                                flex: 0.2,
+                                flex: 0.05,
                             },
                         }}
                     >
@@ -38,9 +37,9 @@ function AboutSection() {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='education_box'>
-                                    <h2>hello</h2>
-                                    <h2>hello</h2>
-                                    <h2>hello</h2>
+                                    <h2>Full Stack Web Development</h2>
+                                    <p>Masai School, Banglore</p>
+                                    <p>March 20223 - Present | Remote</p>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
@@ -52,9 +51,9 @@ function AboutSection() {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='education_box'>
-                                    <h2>hello</h2>
-                                    <h2>hello</h2>
-                                    <h2>hello</h2>
+                                    <h2>B.Sc - Maths and Physics</h2>
+                                    <p>CSJM University, Kanpur</p>
+                                    <p>July 2015 - Jun 2018</p>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
@@ -65,9 +64,9 @@ function AboutSection() {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='education_box'>
-                                    <h2>hello</h2>
-                                    <h2>hello</h2>
-                                    <h2>hello</h2>
+                                    <h2>Intermediate (12th)</h2>
+                                    <p>Government Inter College Lakhimpur-kheri</p>
+                                    <p>July 2013 - Jun 2015</p>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
