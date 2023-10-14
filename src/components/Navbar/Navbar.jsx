@@ -3,6 +3,7 @@ import "./Navbar.css"
 
 function Navbar() {
     const [burger, setBurger] = useState(false);
+    
     return (
         <>
             <div id='nav-menu'>

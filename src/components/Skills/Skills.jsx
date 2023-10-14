@@ -98,8 +98,8 @@ export default function Skills() {
                     {
                         skills.map((e) => {
                             return (<div className='skill_box' key={e.name}>
-                                <img src={`${e.image}`} alt="" />
-                                <span>{e.name}</span>
+                                <img src={`${e.image}`} alt="" className="skills-card-img" />
+                                <span className="skills-card-name">{e.name}</span>
                             </div>)
                         })
 
@@ -110,8 +110,8 @@ export default function Skills() {
                     {
                         otherSkills.map((e) => {
                             return (<div className='skill_box' key={e.name}>
-                                <img src={`${e.image}`} alt="" />
-                                <span>{e.name}</span>
+                                <img src={`${e.image}`} alt="" className="skills-card-img" />
+                                <span className="skills-card-name">{e.name}</span>
                             </div>)
                         })
 
