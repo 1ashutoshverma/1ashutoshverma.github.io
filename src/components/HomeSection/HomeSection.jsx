@@ -1,6 +1,7 @@
 import React from 'react'
 import style from "./HomeSection.css"
 import Typewriter from 'typewriter-effect';
+import AboutSection from '../AboutSection/AboutSection';
 
 function HomeSection() {
     console.log(style)
@@ -23,7 +24,7 @@ function HomeSection() {
                             />
                         </span>
                     </h3>
-                    <p>React | JavaScript | HTML | CSS | JAVA | Git | DSA</p>
+                    <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
                     <div className='home_button'>
                         <button>Check Resume</button>
                         <button>Visit GitHub</button>

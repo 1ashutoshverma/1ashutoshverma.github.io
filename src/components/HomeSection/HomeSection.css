@@ -11,7 +11,7 @@
 }
 
 #left_home {
-  margin: 70px 0;
+  margin: 15px 0;
   width: 50%;
   /* border: 1px solid red; */
   padding: 30px;
@@ -47,12 +47,12 @@
   /* border: 1px solid red; */
 }
 
-#right_home {
-  /* margin: 50px 0; */
-}
+/* #right_home {
+  margin: 50px 0;
+} */
 #home img {
   border-radius: 50%;
-  width: 55%;
+  width: 65%;
 }
 .home_button {
   display: flex;

@@ -25,8 +25,15 @@
   font-weight: 600;
   padding: 20px 0;
 }
-.education_card > div {
-  /* margin: auto; */
+/* .education_card > div {
+  margin: auto;
+} */
+.contactMe {
+  color: #9b6bee;
+  text-decoration: underline;
+}
+b {
+  color: #8e6acc;
 }
 .education_box {
   border: 1px solid #854ce6;
@@ -34,6 +41,7 @@
   width: 80%;
   padding: 20px;
   margin: auto;
+  font-size: 1em;
 }
 
 .education_box h2 {
@@ -43,4 +51,29 @@
 }
 .education_box p {
   color: #958aa8;
+  font-size: 1em;
+}
+
+@media screen and (width<1150px) {
+  #about {
+    font-size: 13px;
+  }
+  .education_box h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (width<800px) {
+  #about {
+    font-size: 11px;
+  }
+  .education_box h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (width<550px) {
+  .education_box h2 {
+    font-size: 0.9em;
+  }
 }

@@ -15,7 +15,8 @@ function AboutSection() {
     return (
         <div id='about' className='about section'>
             <h1>About Me</h1>
-            <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
+            <p id="user-detail-intro">
+                A Full Stack Web Developer with expertise is <b>MERN</b> Stack. I've completed a comprehensive <b>Full Stack Development course</b> at Masai and have solved over 600 DSA problems. My tech toolkit includes <b>HTML, CSS, JavaScript, Java, Git, React, and Redux.</b> I'm passionate about creating efficient, elegant code and have experience in both front-end and back-end development. I thrive on problem-solving and love collaborating with teams to build innovative solutions. Let's connect and turn ideas into reality through technology. You can reach me at <a href="#contact" className='contactMe'>Contact Me</a>.
             </p>
             <div className='education_card'>
 
@@ -74,7 +75,6 @@ function AboutSection() {
                     {/* timeline Ends here */}
                 </div>
             </div>
-
         </div>
     )
 }
