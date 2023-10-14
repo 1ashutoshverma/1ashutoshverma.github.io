@@ -1,10 +1,8 @@
 import React from 'react'
-import style from "./HomeSection.css"
+import "./HomeSection.css"
 import Typewriter from 'typewriter-effect';
-import AboutSection from '../AboutSection/AboutSection';
 
 function HomeSection() {
-    console.log(style)
     return (
         <div id='home'>
             <div id='left_home'>

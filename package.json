@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@mui/lab": "^5.0.0-alpha.148",
+    "github-calendar": "^2.3.2",
     "react": "^18.2.0",
+    "react-calendar-heatmap": "^1.9.0",
     "react-dom": "^18.2.0",
     "typewriter-effect": "^2.21.0"
   },
