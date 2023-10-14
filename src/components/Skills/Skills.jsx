@@ -94,7 +94,7 @@ export default function Skills() {
             <h1>Skills</h1>
             <div id='skill_section'>
                 <h2>Web development</h2>
-                <div className='skills_card'>
+                <div className='skills-card'>
                     {
                         skills.map((e) => {
                             return (<div className='skill_box' key={e.name}>
@@ -106,7 +106,7 @@ export default function Skills() {
                     }
                 </div>
                 <h2>Other Skills</h2>
-                <div className='skills_card'>
+                <div className='skills-card'>
                     {
                         otherSkills.map((e) => {
                             return (<div className='skill_box' key={e.name}>
