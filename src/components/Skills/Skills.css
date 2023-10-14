@@ -1,10 +1,13 @@
+#skills {
+  max-width: 1280px;
+  margin: auto;
+}
 #skill_section {
   border: 1px solid #854ce6;
-  width: 80%;
-  margin: auto;
   text-align: center;
   border-radius: 20px;
   padding: 25px;
+  margin: 30px;
   font-size: 16px;
 }
 
@@ -66,6 +69,9 @@
   #skills h1 {
     font-size: 1.8em;
   }
+  .skill_box span {
+    font-size: 1em;
+  }
 }
 
 @media screen and (width<550px) {
@@ -77,5 +83,8 @@
   }
   #skills h1 {
     font-size: 1.7em;
+  }
+  .skill_box span {
+    font-size: 0.9em;
   }
 }
