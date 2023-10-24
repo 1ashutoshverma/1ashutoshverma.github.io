@@ -24,8 +24,8 @@ function HomeSection() {
                     </h3>
                     <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
                     <div className='home_button'>
-                        <button className="nav-link resume" id="resume-button-2">
-                            <a download={resume} href="https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view?usp=drive_link" target="_blank">
+                        <button className="nav-link resume">
+                            <a download={resume} href="https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view?usp=drive_link" target="_blank" id="resume-link-2">
                                 Resume
                             </a>
                         </button>
