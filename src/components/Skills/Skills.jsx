@@ -1,7 +1,6 @@
 import React from 'react'
-import CalendarHeatmap from "react-calendar-heatmap";
-import "react-calendar-heatmap/dist/styles.css";
 import "./Skills.css";
+import Github from './Github';
 
 
 const skills = [
@@ -91,7 +90,7 @@ export default function Skills() {
 
     return (
         <div id='skills'>
-            <h1>Skills</h1>
+            <h1 style={{ fontWeight: 500 }}>Skills</h1>
             <div id='skill_section'>
                 <h2>Web development</h2>
                 <div className='skills-card'>
@@ -114,8 +113,16 @@ export default function Skills() {
                                 <span className="skills-card-name">{e.name}</span>
                             </div>)
                         })
-
                     }
+                </div>
+            </div>
+            <h1 style={{ fontWeight: 500 }}>My Github Activity</h1>
+            <div className="githubConatiner">
+                <div>
+                    <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
+                </div>
+                <div className='react-activity-calendar'>
+                    <Github />
                 </div>
             </div>
         </div >

@@ -47,6 +47,16 @@
   font-size: 1.4em;
 }
 
+.githubConatiner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid #854ce6;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 30px;
+  margin-top: 0;
+}
+
 @media screen and (width<1150px) {
   #skill_section {
     font-size: 15px;
@@ -59,7 +69,7 @@
   }
 }
 
-@media screen and (width<800px) {
+@media screen and (width<850px) {
   #skill_section {
     font-size: 14px;
   }
@@ -71,6 +81,9 @@
   }
   .skill_box span {
     font-size: 1em;
+  }
+  .githubConatiner {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
