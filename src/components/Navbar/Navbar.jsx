@@ -43,7 +43,7 @@ function Navbar() {
                         <a href='#projects' className="nav-link projects">Projects</a>
                         <a href='#contact' className="nav-link contact">Contact</a>
                         <a href="https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view?usp=drive_link" download={resume} target="_blank">
-                            <button className="nav-link resume">Resume</button>
+                            <button className="nav-link resume" id="resume-button-1">Resume</button>
                         </a>
                         <a href="https://github.com/1ashutoshverma" target="_blank" >
                             <button className="nav-link github">GitHub</button>
