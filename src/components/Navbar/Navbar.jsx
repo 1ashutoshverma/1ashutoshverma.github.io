@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
-
+import resume from "./MyResume.pdf"
 function Navbar() {
     const [burger, setBurger] = useState(false);
-    
+
     return (
         <>
             <div id='nav-menu'>
@@ -18,8 +18,12 @@ function Navbar() {
                         <a href='#contact' className="nav-link contact">Contact</a>
                     </div>
                     <div>
-                        <button className="nav-link resume">Resume</button>
-                        <button className="nav-link github">GitHub</button>
+                        <a href="https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view?usp=drive_link" download={resume} target="_blank">
+                            <button className="nav-link resume">Resume</button>
+                        </a>
+                        <a href="https://github.com/1ashutoshverma" target="_blank" >
+                            <button className="nav-link github">GitHub</button>
+                        </a>
                     </div>
                 </div>
                 {/* For amall Screens */}
@@ -38,8 +42,12 @@ function Navbar() {
                         <a href='#skills' className="nav-link skills">Skills</a>
                         <a href='#projects' className="nav-link projects">Projects</a>
                         <a href='#contact' className="nav-link contact">Contact</a>
-                        <button className="nav-link resume">Resume</button>
-                        <button className="nav-link github">GitHub</button>
+                        <a href="https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view?usp=drive_link" download={resume} target="_blank">
+                            <button className="nav-link resume">Resume</button>
+                        </a>
+                        <a href="https://github.com/1ashutoshverma" target="_blank" >
+                            <button className="nav-link github">GitHub</button>
+                        </a>
                     </div>
                 </div>) : <></>
             }
