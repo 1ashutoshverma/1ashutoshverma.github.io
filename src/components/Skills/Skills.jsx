@@ -118,17 +118,17 @@ export default function Skills() {
             </div>
             <h1 style={{ fontWeight: 500 }}>My Github Activity</h1>
             <div className="githubConatiner">
-                <div id="github-streak-stats">
-                    <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
+                <div>
+                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://streak-stats.demolab.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
                 </div>
                 <div className='react-activity-calendar'>
                     <Github />
                 </div>
-                <div id="github-top-langs">
-                    {/* <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1ashutoshverma&layout=compact&theme=dark&color=yellow" alt="" /> */}
+                <div style={{ height: "0px" }}>
+                    <img src="" alt="" id="github-top-langs" style={{ height: "0px" }} />
                 </div>
-                <div id="github-stats-card">
-                    {/* <img src="https://github-readme-stats.vercel.app/api?username=1ashutoshverma&show_icons=true&theme=dark#gh-dark-mode-only" alt="" /> */}
+                <div style={{ height: "0px" }}>
+                    <img src="" id="github-stats-card" alt="" style={{ height: "0px" }} />
                 </div>
             </div>
         </div >
