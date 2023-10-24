@@ -1,6 +1,5 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
-import styles from "./Github.module.css"
 
 function Github() {
     const selectLastHalfYear = contributions => {
