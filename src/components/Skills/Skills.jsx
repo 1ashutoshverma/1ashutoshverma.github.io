@@ -125,7 +125,7 @@ export default function Skills() {
                     <Github />
                 </div>
                 <div style={{ height: "0px" }} >
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1ashuoshverma&layout=compact&theme=dark" alt="" id="github-top-langs" style={{ height: "0px" }} />
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1ashutoshverma&layout=compact&theme=dark" alt="" id="github-top-langs" style={{ height: "0px" }} />
                 </div>
                 <div style={{ height: "0px" }} >
                     <img src="https://github-readme-stats.vercel.app/api?username=1ashutoshverma&show_icons=true&theme=transparent" id="github-stats-card" alt="" style={{ height: "0px" }} />
