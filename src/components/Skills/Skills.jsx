@@ -119,16 +119,16 @@ export default function Skills() {
             <h1 style={{ fontWeight: 500 }}>My Github Activity</h1>
             <div className="githubConatiner">
                 <div>
-                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://streak-stats.demolab.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
+                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
                 </div>
                 <div className='react-activity-calendar'>
                     <Github />
                 </div>
-                <div style={{ height: "0px" }}>
-                    <img src="" alt="" id="github-top-langs" style={{ height: "0px" }} />
+                <div style={{ height: "0px" }} >
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1ashuoshverma&layout=compact&theme=dark" alt="" id="github-top-langs" style={{ height: "0px" }} />
                 </div>
-                <div style={{ height: "0px" }}>
-                    <img src="" id="github-stats-card" alt="" style={{ height: "0px" }} />
+                <div style={{ height: "0px" }} >
+                    <img src="https://github-readme-stats.vercel.app/api?username=1ashutoshverma&show_icons=true&theme=transparent" id="github-stats-card" alt="" style={{ height: "0px" }} />
                 </div>
             </div>
         </div >

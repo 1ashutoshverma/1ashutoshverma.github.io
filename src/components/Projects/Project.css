@@ -1,0 +1,22 @@
+#projects {
+  width: 1280px;
+  margin: auto;
+}
+.project1 {
+  display: grid;
+  border: 1px solid #854ce6;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.project1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projectDetails {
+  border: 1px solid red;
+}
