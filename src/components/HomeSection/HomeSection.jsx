@@ -28,11 +28,17 @@ function HomeSection() {
                     </h3>
                     <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
                     <div className='home_button'>
-                        <a href="../Navbar/MyResume.pdf" download="1ashutoshverma.pdf" >
-                            <button className="nav-link resume" id="resume-button-2" onClick={downloadHandle}>
-                                Resume
-                            </button>
-                        </a>
+
+                        <button className="nav-link resume" id="resume-button-2"
+                            onClick={() => {
+                                const link = document.createElement("a");
+                                link.download = "Ashutosh_resume.pdf";
+                                link.href = MyResume;
+                                link.click();
+                            }}>
+                            Resume
+                        </button>
+
                         <a href="https://github.com/1ashutoshverma" target="_blank" >
                             <button className="nav-link github" >
                                 GitHub

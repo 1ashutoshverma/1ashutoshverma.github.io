@@ -4,11 +4,20 @@ import resume from "./MyResume.pdf"
 function Navbar() {
     const [burger, setBurger] = useState(false);
 
-
-
     const downloadHandle = () => {
-        window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
-    }
+        const link = document.createElement("a");
+        link.download = "Ashutosh_Resume.pdf";
+        link.href = resume;
+        link.click();
+        window.open(
+            "https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view",
+            "_blank"
+        );
+    };
+
+    // const downloadHandle = () => {
+    //     window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
+    // }
     return (
         <>
             <div id='nav-menu'>
@@ -23,11 +32,18 @@ function Navbar() {
                         <a href='#contact' className="nav-link contact">Contact</a>
                     </div>
                     <div>
-                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf">
-                            <button className="nav-link resume" id="resume-button-1" onClick={downloadHandle}>
+                        {/* <a href="./MyResume.pdf" download="1ashutoshverma.pdf">
+                            <button className="nav-link resume" id="resume-button-1" onClick={c}>
                                 Resume
                             </button>
-                        </a>
+                        </a> */}
+
+                        <button
+                            id="resume-button-1"
+                            className={`nav-link resume`}
+                            onClick={downloadHandle}>
+                            Resume
+                        </button>
 
                         <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github">
                             {/* <button className="nav-link github"> */}
