@@ -4,6 +4,11 @@ import resume from "./MyResume.pdf"
 function Navbar() {
     const [burger, setBurger] = useState(false);
 
+
+
+    const downloadHandle = () => {
+        window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
+    }
     return (
         <>
             <div id='nav-menu'>
@@ -18,11 +23,12 @@ function Navbar() {
                         <a href='#contact' className="nav-link contact">Contact</a>
                     </div>
                     <div>
-                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }} id="resume-link-1" className="nav-link resume">
-                            {/* <button className="nav-link resume" id="resume-button-1"> */}
-                            Resume
-                            {/* </button> */}
+                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf">
+                            <button className="nav-link resume" id="resume-button-1" onClick={downloadHandle}>
+                                Resume
+                            </button>
                         </a>
+
                         <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github">
                             {/* <button className="nav-link github"> */}
                             GitHub
@@ -46,12 +52,12 @@ function Navbar() {
                         <a href='#skills' className="nav-link skills">Skills</a>
                         <a href='#projects' className="nav-link projects">Projects</a>
                         <a href='#contact' className="nav-link contact">Contact</a>
-                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }}>
+                        {/* <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }}>
                             <button>Resume</button>
-                        </a>
-                        <a href="https://github.com/1ashutoshverma" target="_blank" >
+                        </a> */}
+                        {/* <a href="https://github.com/1ashutoshverma" target="_blank" >
                             <button>GitHub</button>
-                        </a>
+                        </a> */}
                     </div>
                 </div>) : <></>
             }

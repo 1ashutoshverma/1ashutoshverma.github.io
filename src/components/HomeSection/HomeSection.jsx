@@ -4,7 +4,9 @@ import Typewriter from 'typewriter-effect';
 import MyResume from "../Navbar/MyResume.pdf"
 
 function HomeSection() {
-
+    const downloadHandle = () => {
+        window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
+    }
     return (
         <div id='home'>
             <div id='left_home'>
@@ -26,11 +28,15 @@ function HomeSection() {
                     </h3>
                     <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
                     <div className='home_button'>
-                        <a className="nav-link resume" href="../Navbar/MyResume.pdf" download="1ashutoshverma.pdf" id="resume-link-2" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }}>
-                            Resume
+                        <a href="../Navbar/MyResume.pdf" download="1ashutoshverma.pdf" >
+                            <button className="nav-link resume" id="resume-button-2" onClick={downloadHandle}>
+                                Resume
+                            </button>
                         </a>
                         <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github">
-                            GitHub
+                            <button className="nav-link resume" >
+                                GitHub
+                            </button>
                         </a>
                         {/* <button>Check Resume</button>
                         <button>Visit GitHub</button> */}
