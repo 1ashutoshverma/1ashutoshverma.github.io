@@ -33,8 +33,8 @@ function HomeSection() {
                                 Resume
                             </button>
                         </a>
-                        <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github">
-                            <button className="nav-link resume" >
+                        <a href="https://github.com/1ashutoshverma" target="_blank" >
+                            <button className="nav-link github" >
                                 GitHub
                             </button>
                         </a>
