@@ -5,8 +5,22 @@ import MyResume from "../Navbar/MyResume.pdf"
 
 function HomeSection() {
     const downloadHandle = () => {
-        window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
-    }
+        const link = document.createElement("a");
+        link.download = "Ashutosh_Resume.pdf";
+        link.href = MyResume;
+        link.click();
+        window.open(
+            "https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view",
+            "_blank"
+        );
+    };
+
+    const githubHandle = () => {
+        window.open(
+            "https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view",
+            "_blank"
+        );
+    };
     return (
         <div id='home'>
             <div id='left_home'>
@@ -26,26 +40,15 @@ function HomeSection() {
                             />
                         </span>
                     </h3>
-                    <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
+                    <p> A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
                     <div className='home_button'>
-
-                        <button className="nav-link resume" id="resume-button-2"
-                            onClick={() => {
-                                const link = document.createElement("a");
-                                link.download = "Ashutosh_resume.pdf";
-                                link.href = MyResume;
-                                link.click();
-                            }}>
+                        <button id="resume-button-2"
+                            onClick={downloadHandle}>
                             Resume
                         </button>
-
-                        <a href="https://github.com/1ashutoshverma" target="_blank" >
-                            <button className="nav-link github" >
-                                GitHub
-                            </button>
-                        </a>
-                        {/* <button>Check Resume</button>
-                        <button>Visit GitHub</button> */}
+                        <button onClick={githubHandle} >
+                            GitHub
+                        </button>
                     </div>
                 </div>
             </div>
