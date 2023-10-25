@@ -18,11 +18,15 @@ function Navbar() {
                         <a href='#contact' className="nav-link contact">Contact</a>
                     </div>
                     <div>
-                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }} id="resume-link-1">
-                            <button className="nav-link resume" id="resume-button-1">Resume</button>
+                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }} id="resume-link-1" className="nav-link resume">
+                            {/* <button className="nav-link resume" id="resume-button-1"> */}
+                            Resume
+                            {/* </button> */}
                         </a>
-                        <a href="https://github.com/1ashutoshverma" target="_blank" >
-                            <button className="nav-link github">GitHub</button>
+                        <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github">
+                            {/* <button className="nav-link github"> */}
+                            GitHub
+                            {/* </button> */}
                         </a>
                     </div>
                 </div>
@@ -43,10 +47,10 @@ function Navbar() {
                         <a href='#projects' className="nav-link projects">Projects</a>
                         <a href='#contact' className="nav-link contact">Contact</a>
                         <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }}>
-                            <button className="nav-link resume">Resume</button>
+                            <button>Resume</button>
                         </a>
                         <a href="https://github.com/1ashutoshverma" target="_blank" >
-                            <button className="nav-link github">GitHub</button>
+                            <button>GitHub</button>
                         </a>
                     </div>
                 </div>) : <></>
