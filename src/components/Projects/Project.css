@@ -43,7 +43,7 @@
 
 .project-tech-stack {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
 }
 .project-tech-stack > span {
   margin: 10px 0;
@@ -52,6 +52,7 @@
   border-radius: 20px;
   font-size: 0.9em;
   color: rgb(235, 234, 234);
+  margin-right: 10px;
 }
 .project-description {
   color: rgb(158, 157, 157);

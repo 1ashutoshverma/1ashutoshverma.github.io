@@ -18,7 +18,7 @@ function Navbar() {
                         <a href='#contact' className="nav-link contact">Contact</a>
                     </div>
                     <div>
-                        <a href="./MyResume.pdf" download={resume} onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }} id="resume-link-1">
+                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }} id="resume-link-1">
                             <button className="nav-link resume" id="resume-button-1">Resume</button>
                         </a>
                         <a href="https://github.com/1ashutoshverma" target="_blank" >
@@ -42,7 +42,7 @@ function Navbar() {
                         <a href='#skills' className="nav-link skills">Skills</a>
                         <a href='#projects' className="nav-link projects">Projects</a>
                         <a href='#contact' className="nav-link contact">Contact</a>
-                        <a href="https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view?usp=drive_link" download={resume} target="_blank">
+                        <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }}>
                             <button className="nav-link resume">Resume</button>
                         </a>
                         <a href="https://github.com/1ashutoshverma" target="_blank" >
