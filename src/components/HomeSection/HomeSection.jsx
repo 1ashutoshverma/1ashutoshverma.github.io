@@ -8,7 +8,9 @@ function HomeSection() {
         const link = document.createElement("a");
         link.download = "Ashutosh_Resume.pdf";
         link.href = MyResume;
+        link.setAttribute("class", "resume-link-2")
         link.click();
+
         window.open(
             "https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view",
             "_blank"
