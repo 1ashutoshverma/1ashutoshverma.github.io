@@ -27,6 +27,15 @@
   text-align: center;
   padding: 25px 0px;
   border-radius: 20px;
+  cursor: pointer;
+
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.contactCard:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 7px 29px 0px;
+  transform: scale(1.03);
 }
 
 .contactCard img {

@@ -6,16 +6,24 @@ import LinkedIn from './contactImages/LinkedIn.png'
 import Github from './contactImages/Github.png'
 
 function Contact() {
+
+    const sendto = (link) => {
+        window.open(
+            link,
+            "_blank"
+        );
+    }
+
     return (
         <div id='contact'>
             <h1>Contact Me</h1>
             <div>
-                <div id="contact-github" className='contactCard'>
+                <div id="contact-github" className='contactCard' onClick={() => { sendto("https://github.com/1ashutoshverma") }}>
                     <img src={Github} alt="" />
                     <h5>Github</h5>
                     <p>1ashutoshverma</p>
                 </div>
-                <div id="contact-linkedin" className='contactCard'>
+                <div id="contact-linkedin" className='contactCard' onClick={() => { sendto("https://www.linkedin.com/in/1ashutoshverma/") }}>
                     <img src={LinkedIn} alt="LinkedIn" />
                     <h5>Linkedin</h5>
                     <p>1ashutoshverma</p>

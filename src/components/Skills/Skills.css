@@ -29,6 +29,7 @@
   text-align: center;
   font-size: 2.4em;
   padding: 15px;
+  font-weight: 500;
 }
 
 .skill_box {
@@ -41,7 +42,16 @@
   border: 1px solid #854ce6;
   height: 70px;
   padding: 20px;
+  transition: 0.5s;
+  transform: scale(1);
+  cursor: pointer;
 }
+
+.skill_box:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 7px 29px 0px;
+  transform: scale(1.05);
+}
+
 .skill_box img {
   width: 60px;
   padding-right: 20px;
