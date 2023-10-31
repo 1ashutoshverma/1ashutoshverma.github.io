@@ -1,26 +1,31 @@
 import React from 'react'
+import "./Contact.css"
+import Phone from './contactImages/Phone.png'
+import Email from './contactImages/Email.png'
+import LinkedIn from './contactImages/LinkedIn.png'
+import Github from './contactImages/Github.png'
 
 function Contact() {
     return (
-        <div id='contact' style={{ backgroundColor: "green", height: "500px" }}>
+        <div id='contact'>
             <div>
-                <div id="contact-github">
-                    <img src="" alt="" />
+                <div id="contact-github" className='contactCard'>
+                    <img src={Github} alt="" />
                     <h5>Github</h5>
                     <p>1ashutoshverma</p>
                 </div>
-                <div id="contact-linkedin">
-                    <img src="" alt="" />
+                <div id="contact-linkedin" className='contactCard'>
+                    <img src={LinkedIn} alt="LinkedIn" />
                     <h5>Linkedin</h5>
                     <p>1ashutoshverma</p>
                 </div>
-                <div id="contact-phone">
-                    <img src="" alt="" />
+                <div id="contact-email" className='contactCard'>
+                    <img src={Email} alt="" />
                     <h5>Email</h5>
                     <p>ashu9236047613@gmail.com</p>
                 </div>
-                <div id="contact-email">
-                    <img src="" alt="" />
+                <div id="contact-phone" className='contactCard'>
+                    <img src={Phone} alt="" />
                     <h5>Phone</h5>
                     <p>+91 8756978783</p>
                 </div>
