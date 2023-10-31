@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
 import resume from "./MyResume.pdf"
 function Navbar() {
@@ -18,18 +18,53 @@ function Navbar() {
     // const downloadHandle = () => {
     //     window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
     // }
+
+    //==============>
+    const [activeSection, setActiveSection] = useState('home');
+
+    useEffect(() => {
+        // Add event listener to track scroll position
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const handleScroll = () => {
+        const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+        const sectionTops = {};
+
+        sections.forEach(section => {
+            const sectionElement = document.getElementById(section);
+            if (sectionElement) {
+                sectionTops[section] = sectionElement.offsetTop;
+            }
+        });
+
+        const scrollPosition = window.scrollY + 500; // Adjust for navbar height
+        let currentSection = 'home';
+
+        for (const section in sectionTops) {
+            if (scrollPosition >= sectionTops[section]) {
+                currentSection = section;
+            }
+        }
+
+        setActiveSection(currentSection);
+    };
+
     return (
         <>
             <div id='nav-menu'>
                 {/* For large Screens */}
                 <div id="largeScreenNavbar">
-                    <div><h2>Portfolio</h2></div>
-                    <div>
-                        <a href='#home' className="nav-link home">Home</a>
-                        <a href='#about' className="nav-link about">About</a>
-                        <a href='#skills' className="nav-link skills">Skills</a>
-                        <a href='#projects' className="nav-link projects">Projects</a>
-                        <a href='#contact' className="nav-link contact">Contact</a>
+                    <a href='#home'><h2>{"Ashutosh </>"}</h2></a>
+                    <div className='navbarLinks'>
+                        <a href='#home' className={`nav-link home ${activeSection === 'home' ? 'active' : ''}`}>Home</a>
+                        <a href='#about' className={`nav-link about ${activeSection === 'about' ? 'active' : ''}`}>About</a>
+                        <a href='#skills' className={`nav-link skills ${activeSection === 'skills' ? 'active' : ''}`}>Skills</a>
+                        <a href='#projects' className={`nav-link projects ${activeSection === 'projects' ? 'active' : ''}`}>Projects</a>
+                        <a href='#contact' className={`nav-link contact ${activeSection === 'contact' ? 'active' : ''}`}>Contact</a>
                     </div>
                     <div>
                         {/* <a href="./MyResume.pdf" download="1ashutoshverma.pdf">
@@ -59,9 +94,9 @@ function Navbar() {
                         <img src={burger ? "/Images/cross.svg" : "/Images/burgerMenu.svg"} alt="" />
                     </div>
                 </div>
-            </div>
+            </div >
             {
-                burger ? (<div id='smallScreenDropDown'>
+                burger ? (<div id='smallScreenDropDown' >
                     <div>
                         <a href='#home' className="nav-link home">Home</a>
                         <a href='#about' className="nav-link about">About</a>

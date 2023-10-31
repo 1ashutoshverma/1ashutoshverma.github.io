@@ -8,6 +8,7 @@ import Github from './contactImages/Github.png'
 function Contact() {
     return (
         <div id='contact'>
+            <h1>Contact Me</h1>
             <div>
                 <div id="contact-github" className='contactCard'>
                     <img src={Github} alt="" />

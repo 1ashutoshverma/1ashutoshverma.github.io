@@ -15,11 +15,15 @@
   align-items: center;
   margin: auto;
 }
-
+#largeScreenNavbar > a > h2 {
+  text-wrap: nowrap;
+  color: #7957d5;
+}
 #largeScreenNavbar > div:nth-child(1) {
   width: 150px;
   /* border: 1px solid red; */
 }
+
 #largeScreenNavbar > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
@@ -30,6 +34,16 @@
 a {
   text-decoration: none;
   color: white;
+}
+.active {
+  color: #7957d5;
+  border-bottom: 1px solid #7957d5;
+  padding-bottom: 3px;
+}
+.navbarLinks > a:hover {
+  color: #7957d5;
+  border-bottom: 1px solid #7957d5;
+  padding-bottom: 3px;
 }
 
 #largeScreenNavbar > div:nth-child(3) {

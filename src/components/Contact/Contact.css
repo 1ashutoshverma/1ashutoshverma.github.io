@@ -4,6 +4,10 @@
   padding: 20px;
   box-shadow: rgba(130, 35, 216, 0.9) 0px 7px 29px 0px;
 }
+#contact h1 {
+  text-align: center;
+  font-weight: 500;
+}
 
 #contact > div {
   display: grid;
