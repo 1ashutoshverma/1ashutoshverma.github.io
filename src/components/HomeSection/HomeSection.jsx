@@ -19,7 +19,7 @@ function HomeSection() {
 
     const githubHandle = () => {
         window.open(
-            "https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view",
+            "https://github.com/1ashutoshverma",
             "_blank"
         );
     };
