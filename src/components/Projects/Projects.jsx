@@ -43,7 +43,7 @@ function Projects() {
                         Green Paradise is an e-commerce website designed for plant enthusiasts. It offers a wide variety of plants and gardening supplies, making it easy for users to browse, select, and purchase their favourite plants online.</p>
                     <div className='projectButtons'>
                         <a href="https://github.com/1ashutoshverma/Green-Paradise" target="_blank" className="project-github-link">View Code</a>
-                        <a href="https://1ashutoshverma.github.io/Green-Paradise/" target="_blank" className="project-deployed-link">View Live App</a>
+                        <a href="https://green-paradise-team.netlify.app/" target="_blank" className="project-deployed-link">View Live App</a>
                     </div>
                 </div>
                 <div>
@@ -64,7 +64,7 @@ function Projects() {
                     <p className="project-description">Bewakoof.com is an Indian e-commerce platform known for its trendy and quirky fashion, offering a wide range of casual clothing, accessories, and merchandise. it caters to individuals looking for unique and fun apparel choices.</p>
                     <div className='projectButtons'>
                         <a href="https://github.com/1ashutoshverma/bewakoof-clone" target="_blank" className="project-github-link">View Code</a>
-                        <a href="https://1ashutoshverma.github.io/bewakoof-clone/" target="_blank" className="project-deployed-link">View Live App</a>
+                        <a href="https://bewakoof-team.netlify.app/" target="_blank" className="project-deployed-link">View Live App</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@ function Projects() {
                     <p className="project-description"> Green Paradise is an e-commerce website designed for plant enthusiasts. It offers a wide variety of plants and gardening supplies, making it easy for users to browse, select, and purchase their favourite plants online.</p>
                     <div className='projectButtons'>
                         <a href="https://github.com/1ashutoshverma/Green-Paradise" target="_blank" className="project-github-link">View Code</a>
-                        <a href="https://1ashutoshverma.github.io/Green-Paradise/" target="_blank" className="project-deployed-link">View Live App</a>
+                        <a href="https://green-paradise-team.netlify.app/" target="_blank" className="project-deployed-link">View Live App</a>
                     </div>
                 </div>
                 <div>
