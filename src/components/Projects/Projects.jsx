@@ -55,7 +55,7 @@ function Projects() {
                     <img src={bewakoof} alt="" />
                 </div>
                 <div className='projectDetails'>
-                    <h2 className="project-title">Bevakoof</h2>
+                    <h2 className="project-title">Bewakoof</h2>
                     <div className="project-tech-stack">
                         <span>HTML</span>
                         <span>CSS</span>
