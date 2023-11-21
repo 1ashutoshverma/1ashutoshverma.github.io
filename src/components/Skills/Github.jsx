@@ -23,12 +23,12 @@ function Github() {
             username="1ashutoshverma"
             transformData={selectLastHalfYear}
             labels={{
-                totalCount: '{{count}} contributions in the last half year',
+                totalCount: '{{count}} commits in last 6 months',
             }}
             blockSize={19}
             blockMargin={5}
             fontSize={20}
-            hideTotalCount={true}
+            // hideTotalCount={true}
             theme={{
                 "light": [
                     "hsl(0, 0%, 92%)",

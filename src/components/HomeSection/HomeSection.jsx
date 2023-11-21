@@ -42,7 +42,7 @@ function HomeSection() {
                             />
                         </span>
                     </h3>
-                    <p> A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
+                    <p> A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things. You can reach me at <a href="#contact" className='contactMe'>Contact Me</a></p>
                     <div className='home_button'>
                         <button id="resume-button-2"
                             onClick={downloadHandle}>
