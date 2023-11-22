@@ -30,6 +30,13 @@
   color: #9b6bee;
   text-decoration: underline;
 }
+.contactMe:hover {
+  /* color: #dccdf7; */
+  /* font-weight: 500; */
+  /* text-shadow: 2px 0px #a87df8; */
+  text-shadow: 2px 2px rgba(173, 99, 252, 0.6);
+}
+
 b {
   color: #8e6acc;
 }
