@@ -2,7 +2,6 @@ import React from 'react'
 import "./Skills.css";
 import Github from './Github';
 
-
 const skills = [
     {
         name: "React Js",
@@ -85,15 +84,28 @@ const otherSkills = [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
     },
 ]
+const ImageAnimate = {
+    offscreen: { y: 0, opacity: 0 },
+    onscreen: {
+        y: 0,
+        opacity: 1,
+        viewport: { once: false, amount: 1 },
+        transition: { duration: 1 },
+    },
 
+};
 export default function Skills() {
 
     return (
-        <div id='skills'>
+        <div id='skills'
+
+        >
             <h1 style={{ fontWeight: 500 }}>Skills</h1>
             <div id='skill_section'>
                 <h2>Web development</h2>
-                <div className='skills-card'>
+                <div className='skills-card'
+
+                >
                     {
                         skills.map((e) => {
                             return (<div className='skill_box' key={e.name}>
@@ -105,7 +117,9 @@ export default function Skills() {
                     }
                 </div>
                 <h2>Other Skills</h2>
-                <div className='skills-card'>
+                <div className='skills-card'
+
+                >
                     {
                         otherSkills.map((e) => {
                             return (<div className='skill_box' key={e.name}>
@@ -119,11 +133,17 @@ export default function Skills() {
             <h1 style={{ fontWeight: 500 }}>My Github Activity</h1>
             <div className="githubConatiner">
                 <div>
-                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
+                    <div>
+                        <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
+                    </div>
+                    <div className='react-activity-calendar'>
+                        <Github />
+                    </div>
                 </div>
-                <div className='react-activity-calendar'>
-                    <Github />
+                <div>
+                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=1ashutoshverma&theme=shades_of_purple" alt="GitHub Streak" /></a>
                 </div>
+
                 <div style={{ height: "0px" }} >
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1ashutoshverma&layout=compact&theme=dark" alt="" id="github-top-langs" style={{ height: "0px" }} />
                 </div>

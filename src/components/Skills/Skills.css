@@ -52,6 +52,11 @@
   transform: scale(1.05);
 }
 
+.skill_box:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 0px 10px 0px;
+  transform: scale(1.05);
+}
+
 .skill_box img {
   width: 60px;
   padding-right: 20px;
@@ -61,8 +66,8 @@
 }
 
 .githubConatiner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   border: 1px solid #854ce6;
   border-radius: 20px;
   padding: 25px;
@@ -70,9 +75,28 @@
   margin-top: 0;
 }
 
+.githubConatiner > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.githubConatiner > div:nth-child(2) {
+  width: 70%;
+  margin: auto;
+}
+
+#skill_section {
+  color: #854ce6;
+}
+#skill_section h2 {
+  color: #c7c6c9;
+  font-weight: 500;
+  font-size: 22px;
+}
 @media screen and (width<1150px) {
   #skill_section {
     font-size: 15px;
+    color: #854ce6;
   }
   .skill_box span {
     font-size: 1.1em;
@@ -81,6 +105,12 @@
     font-size: 2em;
   }
 }
+
+/* @media screen and (width<1000px) {
+  .githubConatiner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
 
 @media screen and (width<850px) {
   #skill_section {
@@ -95,8 +125,12 @@
   .skill_box span {
     font-size: 1em;
   }
-  .githubConatiner {
+  .githubConatiner > div:first-child {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .githubConatiner > div:nth-child(2) {
+    width: 100%;
   }
 }
 
