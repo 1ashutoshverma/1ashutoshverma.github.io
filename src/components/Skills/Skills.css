@@ -4,7 +4,7 @@
 }
 
 #skill_section {
-  border: 1px solid #854ce6;
+  /* border: 1px solid #854ce6; */
   border-radius: 20px;
   text-align: center;
   padding: 25px;
@@ -63,7 +63,7 @@
 .githubConatiner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid #854ce6;
+  /* border: 1px solid #854ce6; */
   border-radius: 20px;
   padding: 25px;
   margin: 30px;
