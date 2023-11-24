@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Skills.css";
 import Github from './Github';
-import { motion } from "framer-motion"
 
 const skills = [
     {
@@ -98,21 +97,14 @@ const ImageAnimate = {
 export default function Skills() {
 
     return (
-        <motion.div id='skills'
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={ImageAnimate}
+        <div id='skills'
+
         >
             <h1 style={{ fontWeight: 500 }}>Skills</h1>
             <div id='skill_section'>
                 <h2>Web development</h2>
-                <motion.div className='skills-card'
-                    initial={{ x: -40, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    // viewport={{ once: false, amount: 1 }}
-                    transition={{
-                        duration: 0.5,
-                    }}
+                <div className='skills-card'
+
                 >
                     {
                         skills.map((e) => {
@@ -123,15 +115,10 @@ export default function Skills() {
                         })
 
                     }
-                </motion.div>
+                </div>
                 <h2>Other Skills</h2>
-                <motion.div className='skills-card'
-                    initial={{ x: 40, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    // viewport={{ once: false, amount: 1 }}
-                    transition={{
-                        duration: 0.5,
-                    }}
+                <div className='skills-card'
+
                 >
                     {
                         otherSkills.map((e) => {
@@ -141,30 +128,22 @@ export default function Skills() {
                             </div>)
                         })
                     }
-                </motion.div>
+                </div>
             </div>
             <h1 style={{ fontWeight: 500 }}>My Github Activity</h1>
             <div className="githubConatiner">
-                <motion.div
-                    initial={{ x: -40, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    // viewport={{ once: false, amount: 1 }}
-                    transition={{
-                        duration: 0.5,
-                    }}
-                >
-                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
-                </motion.div>
-                <motion.div className='react-activity-calendar'
-                    initial={{ x: 40, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    // viewport={{ once: false, amount: 1 }}
-                    transition={{
-                        duration: 0.5,
-                    }}
-                >
-                    <Github />
-                </motion.div>
+                <div>
+                    <div>
+                        <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6" alt="GitHub Streak" /></a>
+                    </div>
+                    <div className='react-activity-calendar'>
+                        <Github />
+                    </div>
+                </div>
+                <div>
+                    <a href="https://git.io/streak-stats"><img id="github-streak-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=1ashutoshverma&theme=shades_of_purple" alt="GitHub Streak" /></a>
+                </div>
+
                 <div style={{ height: "0px" }} >
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1ashutoshverma&layout=compact&theme=dark" alt="" id="github-top-langs" style={{ height: "0px" }} />
                 </div>
@@ -173,6 +152,6 @@ export default function Skills() {
                     <img src="https://github-readme-stats.vercel.app/api?username=1ashutoshverma&show_icons=true&theme=transparent" id="github-stats-card" alt="" style={{ height: "0px" }} />
                 </div>
             </div>
-        </motion.div >
+        </div >
     )
 }

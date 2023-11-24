@@ -53,6 +53,8 @@
 #home img {
   border-radius: 50%;
   width: 65%;
+
+  box-shadow: rgba(134, 38, 230, 0.6) 0px 0px 20px -5px;
 }
 .home_button {
   display: flex;
@@ -61,14 +63,7 @@
   margin-top: 30px;
   gap: 20px;
 }
-/* #home button {
-  border: none;
-  background: transparent;
-  color: white;
-  font-size: 1.3em;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out !important;
-} */
+
 #home button {
   width: 40%;
   -webkit-appearance: button;

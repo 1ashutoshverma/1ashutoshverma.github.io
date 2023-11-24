@@ -2,26 +2,25 @@
   max-width: 1280px;
   margin: auto;
 }
-.project-card {
+.proCard1 {
   display: grid;
   /* border: 1px solid #854ce6; */
   border-radius: 20px;
   padding: 20px;
   margin: 30px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.4fr 1fr;
   gap: 15px;
-  /* transition: 0.4s;
-  transform: scale(1); */
 }
-/* .project-card:hover {
-  border: 0.5px solid #854ce6;
-  box-shadow: rgba(125, 10, 231, 0.1) 0px 7px 29px 0px;
-  transform: scale(1.01);
-} */
+.proCard2 {
+  display: grid;
+  /* border: 1px solid #854ce6; */
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 15px;
+}
 
-/*  */
-
-/*  */
 #projects > h1 {
   text-align: center;
   font-weight: 500;
@@ -102,11 +101,11 @@
 }
 
 .project-deployed-link:hover {
-  box-shadow: rgba(130, 35, 216, 0.9) 0px 7px 29px 0px;
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 0px 10px 0px;
   transform: scale(1.05);
 }
 .project-github-link:hover {
-  box-shadow: rgba(86, 84, 88, 0.9) 0px 7px 29px 0px;
+  box-shadow: rgba(53, 52, 53, 0.9) 0px 0px 10px 0px;
   transform: scale(1.05);
 }
 

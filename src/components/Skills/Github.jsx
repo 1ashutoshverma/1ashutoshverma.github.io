@@ -28,7 +28,7 @@ function Github() {
             blockSize={19}
             blockMargin={5}
             fontSize={20}
-            // hideTotalCount={true}
+            hideTotalCount={true}
             theme={{
                 "light": [
                     "hsl(0, 0%, 92%)",
