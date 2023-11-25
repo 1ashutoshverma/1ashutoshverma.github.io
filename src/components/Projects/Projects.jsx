@@ -70,7 +70,7 @@ function Projects() {
                                     <p className="project-description">{e.description}</p>
                                     <div className='projectButtons'>
                                         <a href={e.githubLink} target="_blank" className="project-github-link">View Code</a>
-                                        <a href={e.githubLink} target="_blank" className="project-deployed-link">View Live App</a>
+                                        <a href={e.appLink} target="_blank" className="project-deployed-link">View Live App</a>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ function Projects() {
                                     <p className="project-description">{e.description}</p>
                                     <div className='projectButtons'>
                                         <a href={e.githubLink} target="_blank" className="project-github-link">View Code</a>
-                                        <a href={e.githubLink} target="_blank" className="project-deployed-link">View Live App</a>
+                                        <a href={e.appLink} target="_blank" className="project-deployed-link">View Live App</a>
                                     </div>
                                 </div>
                                 <div className='projectImg'>
