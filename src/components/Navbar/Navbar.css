@@ -107,6 +107,7 @@ img {
   background-color: rgba(29, 15, 15, 0.9);
   display: flex;
   justify-content: center;
+  z-index: 100;
 }
 
 #smallScreenDropDown > div {

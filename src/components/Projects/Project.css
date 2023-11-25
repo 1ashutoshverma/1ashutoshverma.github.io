@@ -6,7 +6,7 @@
   display: grid;
   /* border: 1px solid #854ce6; */
   border-radius: 20px;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 30px;
   grid-template-columns: 1.4fr 1fr;
   gap: 15px;
@@ -15,7 +15,7 @@
   display: grid;
   /* border: 1px solid #854ce6; */
   border-radius: 20px;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 30px;
   grid-template-columns: 1fr 1.4fr;
   gap: 15px;
@@ -130,6 +130,9 @@
   }
   .project-card > .projectDetails {
     order: 2;
+  }
+  #projects > h1 {
+    font-size: 1.9em;
   }
 
   .project-card > img {

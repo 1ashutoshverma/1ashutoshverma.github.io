@@ -67,12 +67,6 @@ function Navbar() {
                         <a href='#contact' className={`nav-link contact ${activeSection === 'contact' ? 'active' : ''}`}>Contact</a>
                     </div>
                     <div>
-                        {/* <a href="./MyResume.pdf" download="1ashutoshverma.pdf">
-                            <button className="nav-link resume" id="resume-button-1" onClick={c}>
-                                Resume
-                            </button>
-                        </a> */}
-
                         <button
                             id="resume-button-1"
                             className={`nav-link resume`}
@@ -81,9 +75,7 @@ function Navbar() {
                         </button>
 
                         <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github">
-                            {/* <button className="nav-link github"> */}
                             GitHub
-                            {/* </button> */}
                         </a>
                     </div>
                 </div>
@@ -98,17 +90,23 @@ function Navbar() {
             {
                 burger ? (<div id='smallScreenDropDown' >
                     <div>
-                        <a href='#home' className="nav-link home">Home</a>
-                        <a href='#about' className="nav-link about">About</a>
-                        <a href='#skills' className="nav-link skills">Skills</a>
-                        <a href='#projects' className="nav-link projects">Projects</a>
-                        <a href='#contact' className="nav-link contact">Contact</a>
-                        {/* <a href="./MyResume.pdf" download="1ashutoshverma.pdf" onClick={() => { window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank") }}>
-                            <button>Resume</button>
-                        </a> */}
-                        {/* <a href="https://github.com/1ashutoshverma" target="_blank" >
-                            <button>GitHub</button>
-                        </a> */}
+                        <a href='#home' className="nav-link home" onClick={() => { setBurger(!burger) }}>Home</a>
+                        <a href='#about' className="nav-link about" onClick={() => { setBurger(!burger) }}>About</a>
+                        <a href='#skills' className="nav-link skills" onClick={() => { setBurger(!burger) }}>Skills</a>
+                        <a href='#projects' className="nav-link projects" onClick={() => { setBurger(!burger) }}>Projects</a>
+                        <a href='#contact' className="nav-link contact" onClick={() => { setBurger(!burger) }} >Contact</a>
+                        <button
+                            id="resume-button-1"
+                            className={`nav-link resume`}
+                            onClick={() => { downloadHandle(); setBurger(!burger) }} style={{ margin: "auto", width: "100px" }}
+                        >
+                            Resume
+                        </button>
+                        <a href="https://github.com/1ashutoshverma" target="_blank" className="nav-link github" style={{ margin: "auto", width: "100px" }}
+                            onClick={() => { setBurger(!burger) }}
+                        >
+                            GitHub
+                        </a>
                     </div>
                 </div>) : <></>
             }
