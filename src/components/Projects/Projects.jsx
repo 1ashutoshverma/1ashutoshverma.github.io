@@ -52,7 +52,7 @@ function Projects() {
                     return (
 
                         index % 2 == 0 ? (
-                            <div className="project-card proCard1">
+                            <div className="project-card proCard1" key={index}>
                                 <div className='projectImg'>
                                     <img src={e.img} alt="" />
                                 </div>
@@ -75,7 +75,7 @@ function Projects() {
                                 </div>
                             </div>
                         ) : (
-                            <div className="project-card proCard2">
+                            <div className="project-card proCard2" key={index}>
                                 <div className='projectDetails'>
                                     <h2 className="project-title">{index + 1 + ". " + e.projectTitle}</h2>
                                     <div className="project-tech-stack">

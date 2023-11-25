@@ -142,4 +142,11 @@
   .skill_box span {
     font-size: 0.9em;
   }
+
+  .skill_box {
+    max-width: 300px;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+  }
 }
