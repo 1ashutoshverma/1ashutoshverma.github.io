@@ -20,8 +20,10 @@ const skills = [
     },
     {
         name: "Java",
+        // image:
+        //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
         image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+            "https://www.vectorlogo.zone/logos/java/java-icon.svg",
     },
     {
         name: "HTML",
@@ -35,7 +37,9 @@ const skills = [
     {
         name: "MongoDB",
         image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+            "https://cdn.iconscout.com/icon/free/png-512/free-mongodb-5-1175140.png?f=webp&w=256",
+        // image:
+        //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
     },
     {
         name: "Node Js",
