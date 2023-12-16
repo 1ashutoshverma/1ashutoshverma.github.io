@@ -6,7 +6,7 @@ function Navbar() {
 
     const downloadHandle = () => {
         const link = document.createElement("a");
-        link.download = "Ashutosh Verma Resume.pdf";
+        link.download = "Ashutosh-Verma-Resume.pdf";
         link.href = resume;
         link.click();
         window.open(
