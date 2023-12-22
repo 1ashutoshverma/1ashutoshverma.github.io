@@ -10,7 +10,7 @@ function Navbar() {
         link.href = resume;
         link.click();
         window.open(
-            "https://drive.google.com/file/d/1WV8vFaEnNWxYKO0gLjL3O_b8sOSKp9rZ/view?usp=sharing",
+            "https://drive.google.com/file/d/1IEceiOwoiTQeGoi7ziun4HtSZbKjDD7P/view?usp=sharing",
             "_blank"
         );
     };
