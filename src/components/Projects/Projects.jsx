@@ -3,8 +3,8 @@ import greenParadise from "./projectImages/GreenParadise.png"
 import woodFans from "./projectImages/WoodFans.png"
 import bewakoof from "./projectImages/Bewakoof.png"
 import myPortfolio from "./projectImages/myPortfolio.png"
+import chatapp from "./projectImages/chatapp.png"
 import "./Project.css"
-import { motion } from "framer-motion"
 
 const data = [
     {
@@ -14,6 +14,14 @@ const data = [
         description: " Welcome to Wood Fans, your premier destination for exquisite and sustainable furniture solutions that transform your living spaces into havens of comfort and style.",
         githubLink: "https://github.com/1ashutoshverma/wood-fans-mern",
         appLink: "https://wood-fans.vercel.app/"
+    },
+    {
+        img: chatapp,
+        projectTitle: "Chat App",
+        techStack: ["Next.js", "Redux", "CharaUI", "TypeScript", "Node.js", "Express", "MongoDB", "AWS"],
+        description: "Revolutionize social connections with our dynamic chat app! Engage in vibrant public groups, effortlessly find and connect with users, and elevate your networking experience through our user-friendly interface.",
+        githubLink: "https://github.com/1ashutoshverma/chat-app-frontend",
+        appLink: "https://own-chat-app.vercel.app/"
     },
     {
         img: greenParadise,
@@ -30,14 +38,15 @@ const data = [
         description: "Bewakoof.com is an Indian e-commerce platform known for its trendy and quirky fashion, offering a wide range of casual clothing, accessories, and merchandise. it caters to individuals looking for unique and fun apparel choices.",
         githubLink: "https://github.com/1ashutoshverma/bewakoof-clone",
         appLink: "https://bewakoof-team.netlify.app/"
-    }, {
-        img: myPortfolio,
-        projectTitle: "My Portfolio",
-        techStack: ["React", "CSS", "JavaScript"],
-        description: "I am proud to present my personal portfolio website, built using React, a powerful JavaScript library for building user interfaces. This project reflects my skills, experiences, and the projects I've undertaken.",
-        githubLink: "https://github.com/1ashutoshverma/1ashutoshverma.github.io",
-        appLink: "https://1ashutoshverma.github.io/"
-    }
+    },
+    // {
+    //     img: myPortfolio,
+    //     projectTitle: "My Portfolio",
+    //     techStack: ["React", "CSS", "JavaScript"],
+    //     description: "I am proud to present my personal portfolio website, built using React, a powerful JavaScript library for building user interfaces. This project reflects my skills, experiences, and the projects I've undertaken.",
+    //     githubLink: "https://github.com/1ashutoshverma/1ashutoshverma.github.io",
+    //     appLink: "https://1ashutoshverma.github.io/"
+    // }
 ]
 
 

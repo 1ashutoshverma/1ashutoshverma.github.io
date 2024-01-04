@@ -35,7 +35,7 @@ function HomeSection() {
                         <span>
                             <Typewriter
                                 options={{
-                                    strings: "Full Stack Web Developer",
+                                    strings: ["Full Stack Web Developer", "MERN Stack Developer", "Backend Developer", "Fontend Developer"],
                                     autoStart: true,
                                     loop: true,
                                 }}
