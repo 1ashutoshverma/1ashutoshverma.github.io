@@ -18,7 +18,7 @@ const data = [
     {
         img: chatapp,
         projectTitle: "Chat App",
-        techStack: ["Next.js", "Redux", "CharaUI", "TypeScript", "Node.js", "Express", "MongoDB", "AWS"],
+        techStack: ["Next.js", "Redux", "ChakraUI", "TypeScript", "Node.js", "Express", "MongoDB", "AWS"],
         description: "Revolutionize social connections with our dynamic chat app! Engage in vibrant public groups, effortlessly find and connect with users, and elevate your networking experience through our user-friendly interface.",
         githubLink: "https://github.com/1ashutoshverma/chat-app-frontend",
         appLink: "https://own-chat-app.vercel.app/"
