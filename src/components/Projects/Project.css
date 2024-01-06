@@ -89,6 +89,9 @@
   color: rgb(235, 235, 235);
   padding: 10px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   transition: 0.4s;
   transform: scale(1);
@@ -100,6 +103,9 @@
   padding: 10px;
   text-align: center;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.4s;
   transform: scale(1);
   cursor: pointer;
