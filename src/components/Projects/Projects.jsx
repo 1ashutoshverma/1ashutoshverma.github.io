@@ -13,7 +13,8 @@ const data = [
         techStack: ["React", "Redux", "CSS", "Node.js", "Express", "MongoDB", "RazorPay"],
         description: " Welcome to Wood Fans, your premier destination for exquisite and sustainable furniture solutions that transform your living spaces into havens of comfort and style.",
         githubLink: "https://github.com/1ashutoshverma/wood-fans-mern",
-        appLink: "https://wood-fans.vercel.app/"
+        appLink: "https://wood-fans.vercel.app/",
+        backendLink: "https://github.com/1ashutoshverma/wood-fans-backend"
     },
     {
         img: chatapp,
@@ -21,7 +22,8 @@ const data = [
         techStack: ["Next.js", "Redux", "ChakraUI", "TypeScript", "Node.js", "Express", "MongoDB", "AWS"],
         description: "Revolutionize social connections with our dynamic chat app! Engage in vibrant public groups, effortlessly find and connect with users, and elevate your networking experience through our user-friendly interface.",
         githubLink: "https://github.com/1ashutoshverma/chat-app-frontend",
-        appLink: "https://own-chat-app.vercel.app/"
+        appLink: "https://own-chat-app.vercel.app/",
+        backendLink: "https://github.com/1ashutoshverma/chat-app-backend"
     },
     {
         img: greenParadise,
@@ -78,8 +80,11 @@ function Projects() {
                                         }
                                     </div>
                                     <p className="project-description">{e.description}</p>
-                                    <div className='projectButtons'>
-                                        <a href={e.githubLink} target="_blank" className="project-github-link">View Code</a>
+                                    <div className={e.backendLink ? "projectButtons2" : "projectButtons1"}>
+                                        <a href={e.githubLink} target="_blank" className="project-github-link">{e.backendLink ? "Frontend Code" : "View Code"}</a>
+                                        {
+                                            e.backendLink ? <a href={e.backendLink} target="_blank" className="project-github-link">Backend Code</a> : <></>
+                                        }
                                         <a href={e.appLink} target="_blank" className="project-deployed-link">View Live App</a>
                                     </div>
                                 </div>
@@ -98,8 +103,11 @@ function Projects() {
                                         }
                                     </div>
                                     <p className="project-description">{e.description}</p>
-                                    <div className='projectButtons'>
-                                        <a href={e.githubLink} target="_blank" className="project-github-link">View Code</a>
+                                    <div className={e.backendLink ? "projectButtons2" : "projectButtons1"}>
+                                        <a href={e.githubLink} target="_blank" className="project-github-link">{e.backendLink ? "Frontend Code" : "View Code"}</a>
+                                        {
+                                            e.backendLink ? <a href={e.backendLink} target="_blank" className="project-github-link">Backend Code</a> : <></>
+                                        }
                                         <a href={e.appLink} target="_blank" className="project-deployed-link">View Live App</a>
                                     </div>
                                 </div>

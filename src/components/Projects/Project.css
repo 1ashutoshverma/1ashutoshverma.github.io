@@ -73,9 +73,14 @@
   color: rgb(158, 157, 157);
   padding: 10px 0;
 }
-.projectButtons {
+.projectButtons1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.projectButtons2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
