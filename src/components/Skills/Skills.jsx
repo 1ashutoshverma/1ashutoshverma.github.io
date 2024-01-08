@@ -142,7 +142,7 @@ const ImageAnimate = {
 
 };
 export default function Skills() {
-
+    // console.log("first")
     return (
         <div id='skills'
 
