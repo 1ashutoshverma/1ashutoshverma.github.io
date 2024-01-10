@@ -141,6 +141,7 @@ const ImageAnimate = {
     },
 
 };
+// console.log("first")
 export default function Skills() {
     return (
         <div id='skills'
