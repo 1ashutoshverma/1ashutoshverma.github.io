@@ -2,26 +2,21 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 
 function Github() {
-    const selectLastHalfYear = contributions => {
-        const currentYear = new Date().getFullYear();
-        const currentMonth = new Date().getMonth();
-        const shownMonths = 6;
-
-        return contributions.filter(activity => {
+    const selectLastSixMonths = contributions => {
+        const b = contributions.filter(activity => {
             const date = new Date(activity.date);
-            const monthOfDay = date.getMonth();
-
-            return (
-                date.getFullYear() === currentYear &&
-                monthOfDay > currentMonth - shownMonths &&
-                monthOfDay <= currentMonth
-            );
+            const dateNow = Date.now() - 6 * 30.4 * 24 * 60 * 60 * 1000
+            const c = date.getTime() >= dateNow ? true : false;
+            return c;
         });
+        return b
     };
+
+
     return (
         <GitHubCalendar
             username="1ashutoshverma"
-            transformData={selectLastHalfYear}
+            transformData={selectLastSixMonths}
             labels={{
                 totalCount: '{{count}} commits in last 6 months',
             }}
