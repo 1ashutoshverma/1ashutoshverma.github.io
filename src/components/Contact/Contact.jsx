@@ -4,6 +4,7 @@ import Phone from './contactImages/Phone.png'
 import Email from './contactImages/Email.png'
 import LinkedIn from './contactImages/LinkedIn.png'
 import Github from './contactImages/Github.png'
+import { customAnchor } from '../../utils/functions'
 
 function Contact() {
 
@@ -28,12 +29,12 @@ function Contact() {
                     <h5>Linkedin</h5>
                     <p>1ashutoshverma</p>
                 </div>
-                <div id="contact-email" className='contactCard'>
+                <div id="contact-email" className='contactCard' onClick={() => { customAnchor("mailto:1ashutoshverma@gmail") }}>
                     <img src={Email} alt="" />
                     <h5>Email</h5>
                     <p>1ashutoshverma@gmail.com</p>
                 </div>
-                <div id="contact-phone" className='contactCard'>
+                <div id="contact-phone" className='contactCard' onClick={() => { customAnchor("tel:+918756978783") }}>
                     <img src={Phone} alt="" />
                     <h5>Phone</h5>
                     <p>+91 8756978783</p>

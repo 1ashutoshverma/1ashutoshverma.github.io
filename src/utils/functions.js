@@ -16,3 +16,10 @@ export const downloadResume = () => {
 export const githubHandle = () => {
   window.open("https://github.com/1ashutoshverma", "_blank");
 };
+
+export const customAnchor = (href) => {
+  const link = document.createElement("a");
+  link.href = href;
+  link.setAttribute("class", "resume-link-2");
+  link.click();
+};
