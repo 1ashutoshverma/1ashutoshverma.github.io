@@ -1,25 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
-import resume from "./MyResume.pdf"
+import { downloadResume, githubHandle } from '../../utils/functions';
 function Navbar() {
     const [burger, setBurger] = useState(false);
 
-    const downloadHandle = () => {
-        const link = document.createElement("a");
-        link.download = "Ashutosh-Verma-Resume.pdf";
-        link.href = resume;
-        link.click();
-        window.open(
-            "https://drive.google.com/file/d/1FUZuBU9H2rJc9VKWkQ11UHPO4EfivqdY/view?usp=sharing",
-            "_blank"
-        );
-    };
-
-    // const downloadHandle = () => {
-    //     window.open("https://drive.google.com/file/d/15AOvJU2Tmv30EjbsQn1AcCG01TLKP8eI/view", "_blank")
-    // }
-
-    //==============>
     const [activeSection, setActiveSection] = useState('home');
 
     useEffect(() => {
@@ -70,7 +54,7 @@ function Navbar() {
                         <button
                             id="resume-button-1"
                             className={`nav-link resume`}
-                            onClick={downloadHandle}>
+                            onClick={downloadResume}>
                             Resume
                         </button>
 
@@ -98,7 +82,7 @@ function Navbar() {
                         <button
                             id="resume-button-1"
                             className={`nav-link resume`}
-                            onClick={() => { downloadHandle(); setBurger(!burger) }} style={{ margin: "auto", width: "100px" }}
+                            onClick={() => { downloadResume(); setBurger(!burger) }} style={{ margin: "auto", width: "100px" }}
                         >
                             Resume
                         </button>

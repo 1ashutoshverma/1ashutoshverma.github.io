@@ -1,35 +1,15 @@
 import React from 'react'
 import "./HomeSection.css"
 import Typewriter from 'typewriter-effect';
-import MyResume from "../Navbar/MyResume.pdf"
+import { downloadResume, githubHandle } from '../../utils/functions';
 
 function HomeSection() {
-    const downloadHandle = () => {
-        const link = document.createElement("a");
-        link.download = "Ashutosh-Verma-Resume.pdf";
-        link.href = MyResume;
-        link.setAttribute("class", "resume-link-2")
-        link.click();
-
-        window.open(
-            "https://drive.google.com/file/d/1FUZuBU9H2rJc9VKWkQ11UHPO4EfivqdY/view?usp=sharing",
-            "_blank"
-        );
-    };
-
-    const githubHandle = () => {
-        window.open(
-            "https://github.com/1ashutoshverma",
-            "_blank"
-        );
-    };
     return (
         <div id='home'>
             <div id='left_home'>
                 <div>
                     <h1>Hi, I am</h1>
                     <h1 id="user-detail-name">Ashutosh Verma</h1>
-                    {/* <h3>I am a Full Stack Web Developer</h3> */}
                     <h3>
                         I am a
                         <span>
@@ -45,7 +25,7 @@ function HomeSection() {
                     <p> A motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things. You can reach me at <a href="#contact" className='contactMe'>Contact Me</a></p>
                     <div className='home_button'>
                         <button id="resume-button-2"
-                            onClick={downloadHandle}>
+                            onClick={downloadResume}>
                             Resume
                         </button>
                         <button onClick={githubHandle} >

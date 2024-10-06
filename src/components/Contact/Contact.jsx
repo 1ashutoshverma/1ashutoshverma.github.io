@@ -31,7 +31,7 @@ function Contact() {
                 <div id="contact-email" className='contactCard'>
                     <img src={Email} alt="" />
                     <h5>Email</h5>
-                    <p>ashu9236047613@gmail.com</p>
+                    <p>1ashutoshverma@gmail.com</p>
                 </div>
                 <div id="contact-phone" className='contactCard'>
                     <img src={Phone} alt="" />
