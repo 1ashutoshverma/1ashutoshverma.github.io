@@ -29,7 +29,7 @@ function Contact() {
                     <h5>Linkedin</h5>
                     <p>1ashutoshverma</p>
                 </div>
-                <div id="contact-email" className='contactCard' onClick={() => { customAnchor("mailto:1ashutoshverma@gmail") }}>
+                <div id="contact-email" className='contactCard' onClick={() => { customAnchor("mailto:1ashutoshverma@gmail.com") }}>
                     <img src={Email} alt="" />
                     <h5>Email</h5>
                     <p>1ashutoshverma@gmail.com</p>
