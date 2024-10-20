@@ -1,0 +1,6 @@
+.card > h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px 0;
+}
