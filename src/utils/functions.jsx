@@ -23,3 +23,13 @@ export const customAnchor = (href) => {
   link.setAttribute("class", "resume-link-2");
   link.click();
 };
+
+export const parseBoldText = (text) =>{
+  const parts = text.split(/(\*.*?\*)/g);
+  return parts.map((part, index) => {
+      if (part.startsWith('*') && part.endsWith('*')) {
+          return <b className="bold-text" key={index}>{part.slice(1, -1)}</b>;
+      }
+      return <span key={index}>{part}</span>;
+  });
+}
