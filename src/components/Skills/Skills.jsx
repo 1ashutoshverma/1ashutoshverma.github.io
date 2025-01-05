@@ -2,6 +2,7 @@
 import React from "react";
 import "./Skills.css";
 import Github from "./Github";
+import GitHubCalendar from "react-github-calendar";
 
 const skills = [
   {
@@ -175,9 +176,9 @@ export default function Skills() {
           src="https://github-readme-streak-stats.herokuapp.com?user=1ashutoshverma&theme=buefy-dark&hide_border=true&background=191924&border=854CE6&ring=854CE6&currStreakNum=854CE6&sideLabels=854CE6&currStreakLabel=854CE6&stroke=854CE6"
           alt="GitHub Streak"
         />
-        <div className="react-activity-calendar">
+        {/* <div className="react-activity-calendar">
           <Github />
-        </div>
+        </div> */}
         {/* </div> */}
         <div>
           <a href="https://git.io/streak-stats">
