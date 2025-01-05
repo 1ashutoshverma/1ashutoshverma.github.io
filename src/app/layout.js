@@ -17,7 +17,6 @@ export default function Layout({ children }) {
         <title>Ashutosh Verma (Porfolio)</title>
       </head>
       <body>
-        <Navbar />
         <main>{children}</main>
       </body>
     </html>
