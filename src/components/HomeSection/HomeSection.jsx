@@ -30,11 +30,11 @@ function HomeSection() {
           </h3>
           <p>
             {" "}
-            A motivated and versatile individual, always eager to take on new
-            challenges. With a passion for learning, I am dedicated to
-            delivering high-quality results. With a positive attitude and a
-            growth mindset, I am ready to make a meaningful contribution and
-            achieve great things. You can reach me at{" "}
+            With over 1+ year of experience in a dynamic fintech product-based
+            company, I’ve worked across the full web development
+            lifecycle—building, scaling, and optimizing real-world applications.
+            My work spans a wide range of modern technologies and frameworks,
+            both on the frontend and backend.{" "}
             <a href="#contact" className="contactMe">
               Contact Me
             </a>
