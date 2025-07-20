@@ -6,7 +6,7 @@ export const downloadResume = () => {
   link.click();
 
   window.open(
-    "https://drive.google.com/file/d/1QZr-n2vaq2GIF7DbXJ3P44bGt7z3QKWi/view?usp=sharing",
+    "https://drive.google.com/uc?export=download&id=15JdBn34lKzaBECr6NkCT7RsnV5H2RG11",
     "_blank"
   );
 };
